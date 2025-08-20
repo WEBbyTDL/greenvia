@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Greenvia | Clean. Green. Greenvia.</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="logo">
+          <span class="logo-text">Greenvia</span>
+        </div>
+      </div>
+      <div class="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Greenvia</h1>
+      <p class="tagline">Clean. Green. Greenvia.</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <p class="main-intro">Greenvia is Kerala's premier eco-friendly cleaning solutions company. We specialize in solar panel cleaning, facility management, and organic cleaning materials. Sustainability drives every action, as we offer all-in-one solutions that respect nature while keeping spaces pristine.</p>
+      
+      <div class="about-grid">
+        <div class="about-item">
+          <h3>🌱 Our Mission</h3>
+          <p>To revolutionize the cleaning industry in Kerala by providing environmentally conscious solutions that don't compromise on effectiveness. We believe in creating a cleaner, greener future for generations to come.</p>
+        </div>
+
+        <div class="about-item">
+          <h3>💫 Our Vision</h3>
+          <p>To be the leading force in sustainable cleaning solutions across South India, setting new standards for eco-friendly practices while maintaining the highest levels of service quality and customer satisfaction.</p>
+        </div>
+
+        <div class="about-item">
+          <h3>🤝 Our Values</h3>
+          <ul class="values-list">
+            <li><strong>Environmental Responsibility:</strong> Every product and service is chosen with our planet in mind</li>
+            <li><strong>Innovation:</strong> Constantly seeking better, greener solutions</li>
+            <li><strong>Quality:</strong> Uncompromising standards in every task</li>
+            <li><strong>Transparency:</strong> Clear communication and honest practices</li>
+          </ul>
+        </div>
+
+        <div class="about-item">
+          <h3>📈 Our Impact</h3>
+          <ul class="impact-list">
+            <li>Saved over 1 million liters of water through efficient cleaning methods</li>
+            <li>Increased solar panel efficiency by 30% for hundreds of clients</li>
+            <li>Zero chemical waste in all our operations</li>
+            <li>Created sustainable jobs for local communities</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about-footer">
+        <h3>Why Choose Greenvia?</h3>
+        <p>With years of experience in sustainable cleaning solutions, we understand that every space deserves specialized care. Our team of certified professionals combines traditional wisdom with modern technology to deliver results that exceed expectations while protecting our environment. From solar farms to office complexes, we bring the same level of dedication and eco-consciousness to every project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="animate-in">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card" data-service-id="1">
+        <img src="https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=400&amp;h=300&amp;fit=crop" alt="Solar Panel Cleaning">
+        <h3>☀️ Solar Panel Cleaning</h3>
+        <p>Maximize efficiency with clean panels—safe, chemical‑free, expert care.</p>
+        <button class="service-btn" onclick="openModal(1)">More</button>
+      </div>
+    
+      <div class="card" data-service-id="2">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&amp;h=300&amp;fit=crop" alt="Facility Management">
+        <h3>🏢 Facility Management</h3>
+        <p>Keeping your offices, schools, and public areas spotless and eco‑friendly.</p>
+        <button class="service-btn" onclick="openModal(2)">More</button>
+      </div>
+    
+      <div class="card" data-service-id="3">
+        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=400&h=300&fit=crop" alt="Organic Cleaning Solutions">
+        <h3>🌿 Organic Cleaning Solutions</h3>
+        <p>All-in-one green cleaning: natural, powerful, and 100% biodegradable.</p>
+        <button class="service-btn" onclick="openModal(3)">More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Modals -->
+  <div class="modal" id="modal-1">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>☀️ Solar Panel Cleaning</h3>
+        <button class="close-modal" onclick="closeModal(1)">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Our specialized solar panel cleaning service ensures your solar investment performs at its peak efficiency. We use advanced, eco-friendly cleaning methods that protect both your panels and the environment.</p>
+        <ul>
+          <li>Increases panel efficiency by 30%</li>
+          <li>Eco-friendly cleaning system</li>
+          <li>Trained and certified technicians</li>
+          <li>Regular maintenance programs available</li>
+          <li>Detailed performance reports</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-2">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>🏢 Facility Management</h3>
+        <button class="close-modal" onclick="closeModal(2)">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Comprehensive facility management solutions that keep your spaces clean, safe, and sustainable. We handle everything from daily maintenance to specialized cleaning needs.</p>
+        <ul>
+          <li>24/7 professional cleaning services</li>
+          <li>Green cleaning protocols</li>
+          <li>Custom cleaning schedules</li>
+          <li>Trained and background-checked staff</li>
+          <li>Emergency response cleaning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-3">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>🌿 Organic Cleaning Solutions</h3>
+        <button class="close-modal" onclick="closeModal(3)">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Our organic cleaning solutions are specially formulated to be tough on dirt but gentle on the environment. All products are 100% biodegradable and safe for your family and pets.</p>
+        <ul>
+          <li>Plant-based ingredients</li>
+          <li>Zero harmful chemicals</li>
+          <li>Effective against 99.9% of germs</li>
+          <li>Pleasant natural fragrances</li>
+          <li>Bulk options available</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact">
+    <h2>Let's Get in Touch</h2>
+    <form action="https://formspree.io/f/xkgbklkk" method="POST">
+      <label>Name</label>
+      <input type="text" name="name" required/>
+      <label>Location</label>
+      <input type="text" name="location" required/>
+      <label>Email</label>
+      <input type="email" name="email" required/>
+      <label>Contact Number</label>
+      <input type="tel" name="phone" required/>
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+
+  <section class="contact-info">
+    <div class="contact-container">
+      <h2>Contact Information</h2>
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <h3>Phone</h3>
+          <p><a href="tel:+919747169048">+91 97471 69048</a></p>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <h3>Email</h3>
+          <p><a href="mailto:info@greenvia.com">info@greenvia.com</a></p>
+          <p><a href="mailto:support@greenvia.com">support@greenvia.com</a></p>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🕒</div>
+          <h3>Business Hours</h3>
+          <p>Monday - Saturday</p>
+          <p>9:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Greenvia | Clean. Green. Greenvia.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
